@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/luisfer2818/api_desafio_encurtar_url"
   },
   "author": "Jheimis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/"
+    "url": "https://github.com/luisfer2818/api_desafio_encurtar_url"
   },
-  "homepage": "https://github.com/",
+  "homepage": "https://github.com/luisfer2818/api_desafio_encurtar_url",
   "dependencies": {
     "chai": "^4.3.10",
     "dotenv": "^16.0.3",
