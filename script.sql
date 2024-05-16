@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS `desafio_back` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `desafio_back`;
+
+CREATE TABLE IF NOT EXISTS `pessoa` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Nome` varchar(255) NOT NULL,
+  `Sobrenome` varchar(255) DEFAULT NULL,
+  `DataNascimento` date DEFAULT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Telefone` varchar(20) DEFAULT NULL,
+  `Endereco` varchar(255) DEFAULT NULL,
+  `Cidade` varchar(100) DEFAULT NULL,
+  `Estado` varchar(50) DEFAULT NULL,
+  `CEP` varchar(10) DEFAULT NULL,
+  `CPF_CNPJ` varchar(14) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `Email` (`Email`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE IF NOT EXISTS `url_tb` (
+  `ID_URL` bigint NOT NULL AUTO_INCREMENT,
+  `URL_CURTA` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `URL_ORIGINAL` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `HASH` varchar(50) DEFAULT NULL,
+  `CREATED_AT` date DEFAULT NULL,
+  `UPDATED_AT` date DEFAULT NULL,
+  PRIMARY KEY (`ID_URL`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
